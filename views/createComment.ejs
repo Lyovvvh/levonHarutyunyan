@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Comment</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+	</head>
+	<body>
+		<div class="comment-container">
+			<h1 class="comment-title">Comment</h1>
+			<form id="comment-form">
+
+
+				<label for="comment" class="form-label">
+					<input
+						type="text"
+						name="comment"
+						id="comment"
+						class="form-input"
+						placeholder="Comment"
+						required
+					/>
+					<span id="comment-error" class="error"></span>
+				</label>
+
+				<input type="submit" class="form-submit" value="create" />
+			</form>
+
+			<div id="success-message" class="success-message"></div>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="/javascripts/createComment.js"></script>
+	</body>
+</html>
